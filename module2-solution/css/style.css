@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 1rem;
+	font-size: 18px;
+	font-family: sans-serif;
+	line-height: 1.35;
+}
+
+.main-title {
+	font-family: 'Baloo Chettan 2', cursive;
+	font-size: 1.75em;
+	text-align: center;
+	margin: 3rem 0 1.5rem 0;
+}
+
+section {
+	background: #bbb;
+	border: 3px solid black;
+	border-radius: 10px 0 10px 10px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.container {
+	padding: 10px;
+}
+
+.menu {
+	position: relative;
+}
+
+.menu-title {
+	position: absolute;
+	right: 0;
+	top: 0;	
+	padding: 5px 40px;
+	border-style: solid solid solid solid;
+	border-width: 1px 1px 3px 3px;
+	border-color: black;
+	border-radius: 0 0 0 5px;
+	font-family: 'Baloo Chettan 2', cursive;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+.menu-text {
+	position: relative;
+	padding-top: 40px;
+	font-family: 'Baloo Chettan 2', cursive;
+}
+
+@media (min-width: 992px) {
+	section {
+		float: left;
+		width: calc(33.33% - 20px);
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	section.half {
+		float: left;
+		width: calc(50% - 20px);
+	}
+
+	section.full {
+		float: left;
+		width: calc(100% - 20px);
+	}
+}
+
+@media (max-width: 767px){
+	section{
+		margin-top: 20px;
+	}
+}
+
+/* Coloring styles */
+.bg-yellow{
+	background-color: #F2B705;
+}
+
+.bg-orange{
+	background-color: #D97904;
+}
+
+.bg-green{
+	background-color: #A9BF04;
+}
+
+.debug {
+	border: 1px solid red;
+}
