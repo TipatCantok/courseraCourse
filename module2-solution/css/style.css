@@ -5,10 +5,16 @@
 }
 
 body {
-	margin: 1rem;
+	margin: 1.5rem;
 	font-size: 18px;
 	font-family: sans-serif;
 	line-height: 1.35;
+}
+
+.container {
+	overflow: auto;
+	position: relative;
+	height: 100%;
 }
 
 .main-title {
@@ -18,20 +24,11 @@ body {
 	margin: 3rem 0 1.5rem 0;
 }
 
-section {
-	background: #bbb;
-	border: 3px solid black;
-	border-radius: 10px 0 10px 10px;
-	margin: 10px;
-	padding: 10px;
-}
-
-.container {
-	padding: 10px;
-}
-
 .menu {
 	position: relative;
+	float: left;
+	display: inline-block;
+	height: 100%;
 }
 
 .menu-title {
@@ -46,36 +43,36 @@ section {
 	font-family: 'Baloo Chettan 2', cursive;
 	font-weight: bold;
 	font-size: 1.25em;
+	letter-spacing: 1px;
+	text-transform: capitalize;
 }
 
 .menu-text {
-	position: relative;
 	padding-top: 40px;
 	font-family: 'Baloo Chettan 2', cursive;
 }
 
+section {
+	background: #ddddd0;
+	border: 3px solid black;
+	border-radius: 10px 0 10px 10px;
+	margin: 10px;
+	padding: 10px 20px;
+}
+
 @media (min-width: 992px) {
 	section {
-		float: left;
 		width: calc(33.33% - 20px);
 	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 	section.half {
-		float: left;
 		width: calc(50% - 20px);
 	}
 
 	section.full {
-		float: left;
 		width: calc(100% - 20px);
-	}
-}
-
-@media (max-width: 767px){
-	section{
-		margin-top: 20px;
 	}
 }
 
