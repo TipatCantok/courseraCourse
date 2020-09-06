@@ -1,0 +1,42 @@
+.visible-xs {
+  display: none;
+}
+
+.nav-item:hover {
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 0 20px;
+}
+
+.menu-item-title {
+  margin: 0 0 10px;
+}
+
+.menu-title {
+  font-family: "Open Sans", monospace;
+  margin: 20px auto 40px;
+  font-weight: 600;
+}
+
+@media (min-width: 576px) {
+  .visibe-xs {
+    display: initial;
+  }
+
+  div#navbarSupportedContent.navbar-collapse {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 992px) {
+  
+}
